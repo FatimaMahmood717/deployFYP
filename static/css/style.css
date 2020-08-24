@@ -1,0 +1,181 @@
+body,html{
+
+    padding: 0;
+       margin: 0;
+}
+.li{
+
+  text-align: center;
+  display: inline;
+  font-size: 15px;
+  padding-left: 0%;
+}
+.img{
+  padding-right: 0%;
+}
+body{
+    height:100vh;
+    background-color: #151519;
+
+}
+
+.nav{
+    /*background-color:#0a5275;*/
+    background-color: black;
+    height:70px;
+    position:relative;
+}
+
+button{
+    background: #e2e3e7;
+    color:#151519;
+    width:150px;
+    height:40px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+button:focus {
+    outline:none;
+}
+button:hover{
+    color:blue;
+    background-color: black;
+}
+/*************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+ /* background: #042331;*/
+ background: #e2e3e7;
+  border-radius: 2px;
+  cursor: pointer;
+}
+label #btn{
+  left: 20px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: auto;
+    height: auto;
+    position: relative;
+    background: #042331;
+  }
+  .sidebar ul a {float: left;}
+ /* div.div1 {margin-left: 0;}*/
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar ul a {
+    text-align: center;
+    float: none;
+    background: #042331;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: auto;
+    height: auto;
+    position: relative;
+    background: #042331;
+  }
+  .sidebar ul a {float: left;}
+ /* div.div1 {margin-left: 0;}*/
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 500px) {
+  .sidebar ul a {
+    text-align: center;
+    float: none;
+    background: #042331;
+  }
+}
+/********************************************************** end of navigation work*/

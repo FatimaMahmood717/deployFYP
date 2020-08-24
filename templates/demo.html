@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Demo</title>
+<!--<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link href="C:\Users\Mahmood Khan\Desktop\Final Year Project\fontawesome-free-5.13.0-web\css\all.css" rel="stylesheet">
+-->
+{% load static %}
+<link href="{% static 'css/style.css'%}" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="{% static 'css/demo.css'%}">
+<!--
+  -->
+
+<link href="C:\Users\Mahmood Khan\Desktop\Final Year Project\fontawesome-free-5.13.0-web\css\all.css" rel="stylesheet">
+
+</head>
+<body>
+  <table width="100%" class="nav">
+   <!-- <tr>
+      <th scope="col col1" width="10%">
+        <img src="images\o-logo.PNG" height="70px" width="80px" class="img">
+      </th>
+      <th scope="col col1" width="10%">
+        <ul style="color:aliceblue">
+           <li class="li">Object</li>
+          <li class="li">Detection</li></ul>
+      </th>
+
+      </th scope="col col1" width="50%">
+      <th> -->
+        <tr>
+
+          <th scope="col col1" width="15%">
+            <img src="{% static 'images\ob-logo.PNG'%}" height="70px" width="130px" class="img">
+          </th>
+
+          </th scope="col col1" width="50%">
+          <th>
+
+      <th scope="col col1" width="30%">
+       <div class="btn">
+<a href="{% url 'signin' %}"><button type="button">SIGN IN</button></a>
+
+       </div>
+
+      </th>
+    </tr>
+    </table>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+
+     <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My Apps</header>
+  <ul>
+      <!-- icon links
+    https://www.iconsdb.com/white-icons/?search=bulb
+    -->
+<li><a href="{% url 'index' %}"><img height="20px" src="{% static 'images\ho.PNG'%}"> Home</a></li>
+<li><a href="{% url 'training' %}"><img height="25px" src="{% static 'images\te.PNG'%}">Training</a></li>
+<li><a href="{% url 'technology' %}"><img height="20px" src="{% static 'images\ti.PNG'%}"> Technology</a></li>
+<li><a href="{% url 'partners' %}"><img height="20px" src="{% static 'images\pa.PNG'%}"> Partners</a></li>
+<li><a href="{% url 'demo' %}"><img height="20px" src="{% static 'images\de.PNG'%}"> Demo</a></li>
+<li><a href="{% url 'howitworks' %}"><img height="20px" src="{% static 'images\hiw.PNG'%}"> How It Works</a></li>
+<li><a href="{% url 'whyus' %}"><img height="20px" src="{% static 'images\wu.PNG'%}"> Why Us?</a></li>
+<li><a href="{% url 'ourTeam' %}"><img height="20px" src="{% static 'images\au.PNG'%}"> Our Team</a></li>
+<li><a href="{% url 'contact' %}"><img height="20px" src="{% static 'images\co.PNG'%}"> Contact Us</a></li>
+
+</ul>
+</div>
+<!-------------------------------------------------end of navigation work--------------------------------------------------------->
+<table class="d1">
+<th scope="col col1" width="25%"></th>
+<th scope="col col1" width="50%">
+
+  <div class="div1">
+    <br><br><br>
+    <h1>Demo</h1>
+
+  <p>
+
+
+  </p>
+  </div>
+
+</th>
+<th scope="col col1" width="25%"></th>
+</table>
+
+
+</body>
+</html>

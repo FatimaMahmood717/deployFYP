@@ -1,0 +1,33 @@
+<!----------INPUT WORK ------ CODE LINK:  https://codepen.io/dcode-software/pen/yLLgQRd--------------------------------------
+  https://www.youtube.com/watch?v=SE38zdOOrAQ ---------->
+  <table class="d1">
+<th scope="col col1" width="25%"></th>
+<th scope="col col1" width="50%">
+
+  <div class="div2"><br><br><br><!-- write every thing within this div
+  https://www.codingnepalweb.com/2020/07/preview-image-before-upload-in-javascript.html
+        https://www.youtube.com/watch?v=VElnT8EoEEM (for image preview)-->
+
+       <!--<div>
+      <input type="file" name="file" id="file" accept="image/*" onchange="previewImage();">
+    <div class="image-preview" id="imagePreview">
+
+       <img src="" id="preview" alt="Image Preview" class="image-preview__image">
+        <span class="image-preview__default-text">Image Preview</span><br><br>
+</div>
+</div>-->
+
+
+
+
+
+
+
+<button type="button">RESIZE</button>
+  </div>   <!-- write every thing within this div-->
+
+
+</th>
+<th scope="col col1" width="25%"></th>
+</table>
+

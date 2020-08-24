@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>How it works</title>
+<!--<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
+<link href="C:\Users\Mahmood Khan\Desktop\Final Year Project\fontawesome-free-5.13.0-web\css\all.css" rel="stylesheet">
+-->
+{% load static %}
+<link href="{% static 'css/style.css'%}" rel="stylesheet" >
+  <link rel="stylesheet" type="text/css" href="{% static 'css/howitworks.css'%}">
+<!--
+  -->
+
+<link href="C:\Users\Mahmood Khan\Desktop\Final Year Project\fontawesome-free-5.13.0-web\css\all.css" rel="stylesheet">
+
+</head>
+<body>
+  <table width="100%" class="nav">
+   <!-- <tr>
+      <th scope="col col1" width="10%">
+        <img src="images\o-logo.PNG" height="70px" width="80px" class="img">
+      </th>
+      <th scope="col col1" width="10%">
+        <ul style="color:aliceblue">
+           <li class="li">Object</li>
+          <li class="li">Detection</li></ul>
+      </th>
+
+      </th scope="col col1" width="50%">
+      <th> -->
+        <tr>
+
+          <th scope="col col1" width="15%">
+            <img src="{% static 'images\ob-logo.PNG'%}" height="70px" width="130px" class="img">
+          </th>
+
+          </th scope="col col1" width="50%">
+          <th>
+
+      <th scope="col col1" width="30%">
+       <div class="btn">
+<a href="{% url 'signin' %}"><button type="button">SIGN IN</button></a>
+
+       </div>
+
+      </th>
+    </tr>
+    </table>
+
+    <!-- ------------------------------------------------------------------------------------------------------------------>
+    <input type="checkbox" id="check">
+    <label for="check">
+
+     <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My Apps</header>
+  <ul>
+      <!-- icon links
+    https://www.iconsdb.com/white-icons/?search=bulb
+    -->
+<li><a href="{% url 'index' %}"><img height="20px" src="{% static 'images\ho.PNG'%}"> Home</a></li>
+<li><a href="{% url 'training' %}"><img height="25px" src="{% static 'images\te.PNG'%}">Training</a></li>
+<li><a href="{% url 'technology' %}"><img height="20px" src="{% static 'images\ti.PNG'%}"> Technology</a></li>
+<li><a href="{% url 'partners' %}"><img height="20px" src="{% static 'images\pa.PNG'%}"> Partners</a></li>
+<li><a href="{% url 'demo' %}"><img height="20px" src="{% static 'images\de.PNG'%}"> Demo</a></li>
+<li><a href="{% url 'howitworks' %}"><img height="20px" src="{% static 'images\hiw.PNG'%}"> How It Works</a></li>
+<li><a href="{% url 'whyus' %}"><img height="20px" src="{% static 'images\wu.PNG'%}"> Why Us?</a></li>
+<li><a href="{% url 'ourTeam' %}"><img height="20px" src="{% static 'images\au.PNG'%}"> Our Team</a></li>
+<li><a href="{% url 'contact' %}"><img height="20px" src="{% static 'images\co.PNG'%}"> Contact Us</a></li>
+
+</ul>
+</div>
+<!-------------------------------------------------end of navigation work--------------------------------------------------------->
+<table class="d1">
+<th scope="col col1" width="25%"></th>
+<th scope="col col1" width="50%">
+
+  <div class="div1">
+    <br><br><br>
+    <h1>How it works</h1>
+ <!-- <p>A Fully Convolutional Neural Network based classifier is used to predict the facial emotions
+      of the the person in the image. An FCN (Fully Convolutional Network) is a network composed of
+      only convolutional layers, batch norms and non-linearities, ie., it has no fully Connected (or Dense)
+       layers. The figure below shows how a convolutional layer applies. Whether a face exists in the image
+       or not is determined by a Viola Jones Detector.
+       <img src="hiwp.PNG">
+    </p>
+
+----------------------------------------------------------------------------------------------------------
+https://aws.amazon.com/getting-started/hands-on/build-train-deploy-machine-learning-model-sagemaker/     -
+https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7                               -
+                                                                                                         -
+                                                                                                         -
+Miss Link                                                                                                -
+https://devblogs.nvidia.com/digits-deep-learning-gpu-training-system/                                    -
+----------------------------------------------------------------------------------------------------------
+In this website you can build, train, and deploy a machine learning (ML) model. We will use the popular __________ ML algorithm for this exercise. (Amazon SageMaker/______________ ) is a modular, fully managed machine learning service that enables developers and data scientists to build, train, and deploy ML models.
+
+Taking ML models from conceptualization to production is typically complex and time-consuming. You have to manage large amounts of data to train the model, choose the best algorithm for training it, manage the compute capacity while training it, and then deploy the model into a production environment. (Amazon SageMaker/______________ ) reduces this complexity by making it much easier to build and deploy ML models. After you choose the right algorithms and frameworks from the wide range of choices available, it manages all of the underlying infrastructure to train your model at (petabyte scale/_________) , and deploy it to production.
+
+
+In this tutorial, you will:
+
+    1)Create a notebook instance
+    2)Prepare the data
+    3)Train the model to learn from the data
+    4)Deploy the model
+    5)Evaluate your ML model's performance
+
+  -->
+  <p>
+
+
+  </p>
+  </div>
+
+</th>
+<th scope="col col1" width="25%"></th>
+</table>
+
+
+</body>
+</html>
